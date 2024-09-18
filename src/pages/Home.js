@@ -1,14 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
 
-const Calculator = () => {
+const Home = () => {
   return (
-    <div className="calculator">
+    <div>
       <Header />
-
-      <h1>Calculatrice</h1>
     </div>
   );
 };
 
-export default Calculator;
+export default Home;
