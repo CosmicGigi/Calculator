@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { calculator, home, todolist } from "../routes";
 
 const DropdownMenu = () => {
@@ -28,13 +28,9 @@ const DropdownMenu = () => {
         <nav>
           <ul>
             {navLinks.map((link, index) => (
-              <NavLink
-                key={index}
-                to={link.path}
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
+              <Link key={index} to={link.path} className="nav-link">
                 <li>{link.label}</li>
-              </NavLink>
+              </Link>
             ))}
           </ul>
         </nav>

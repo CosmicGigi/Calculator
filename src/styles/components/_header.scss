@@ -6,5 +6,27 @@
 
   .menu {
     cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 100px;
+    margin: 50px 0 0 0;
+  }
+
+  nav {
+    margin: 20px;
+    ul {
+      @include columncenter;
+      gap: 5px;
+
+      li {
+        color: black;
+
+        &:hover {
+          color: cadetblue;
+        }
+      }
+    }
   }
 }
