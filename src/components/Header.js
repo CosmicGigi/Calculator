@@ -17,11 +17,13 @@ const DropdownMenu = () => {
   ];
 
   return (
-    <div>
-      <div className="header">
+    <div className="header">
+      <div>
         <h1>Gigi World</h1>
       </div>
-      <button onClick={toggleMenu}>{isOpen ? "Close" : "Open"}</button>
+      <button className="menu" onClick={toggleMenu}>
+        {isOpen ? "Close" : "Open"}
+      </button>
       {isOpen && (
         <nav>
           <ul>

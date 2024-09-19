@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Calculator from "./pages/Calculator";
 import Todolist from "./pages/Todolist";
 import Error from "./pages/Error";
-import { calculator, home, error, todolist } from "./routes";
 import Home from "./pages/Home";
+import { calculator, home, error, todolist } from "./routes";
+import "./styles/index.scss";
 
 const App = () => {
   return (
