@@ -1,6 +1,6 @@
-import { ACTIONS } from "../Calculate/Mycalculator";
+import { ACTIONS } from "./Mycalculator";
 
-export default function DigitButtons({ dispatch, digit }) {
+const DigitButton = ({ dispatch, digit }) => {
   return (
     <button
       onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } })}
@@ -8,4 +8,6 @@ export default function DigitButtons({ dispatch, digit }) {
       {digit}
     </button>
   );
-}
+};
+
+export default DigitButton;
