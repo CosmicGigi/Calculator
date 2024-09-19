@@ -4,9 +4,8 @@ import Mycalculator from "../components/Mycalculator";
 
 const Calculator = () => {
   return (
-    <div className="calculator">
+    <div>
       <Header />
-      <h1>Calculatrice</h1>
       <Mycalculator />
     </div>
   );
