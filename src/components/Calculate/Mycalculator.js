@@ -106,10 +106,10 @@ const formatOperand = (operand) => {
   if (!operand) return;
   const [integer, decimal] = operand.split(".");
   if (!decimal)
-    return new Intl.NumberFormat("en-us", { maximumFractionDigits: 0 }).format(
+    return new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }).format(
       integer
     );
-  return `${new Intl.NumberFormat("en-us", { maximumFractionDigits: 0 }).format(
+  return `${new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }).format(
     integer
   )}.${decimal}`;
 };
