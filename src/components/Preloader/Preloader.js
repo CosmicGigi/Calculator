@@ -1,16 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { preLoaderAnim } from "./PreloaderAnim";
 
-const Preloader = () => {
+const Preloader = ({ setLoading }) => {
+  const navigate = useNavigate();
+
   useEffect(() => {
-    preLoaderAnim();
-  }, []);
+    preLoaderAnim(setLoading);
+  }, [setLoading]);
+
+  const handleClick = useCallback(() => {
+    setLoading(false);
+    navigate("/");
+  }, [navigate, setLoading]);
 
   return (
-    <div className="preloader">
-      <div className="text-container">
-        <span>Cosmic</span>
-        <span>Gigi</span>
+    <div className="preloader" onClick={handleClick}>
+      <div className="texts-container">
+        <span>COSMIC GIGI</span>
+        <span className="selfdefinition">
+          Créativité, Modernité, Performance
+        </span>
       </div>
     </div>
   );
