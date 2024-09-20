@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ACTIONS } from "./Mycalculator";
+import { ACTIONS } from "../Calculate/Mycalculator";
 
 const OperationButton = React.memo(({ dispatch, operation }) => {
   const handleClick = React.useCallback(() => {

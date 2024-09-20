@@ -1,4 +1,4 @@
-import { ACTIONS } from "./Mycalculator";
+import { ACTIONS } from "../Calculate/Mycalculator";
 
 const DigitButton = ({ dispatch, digit }) => {
   return (
