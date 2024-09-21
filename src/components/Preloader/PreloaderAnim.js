@@ -28,7 +28,6 @@ export const preLoaderAnim = (setLoading) => {
       opacity: 0,
       ease: "power2.out",
       onComplete: () => {
-        gsap.set(".preloader", { display: "none" });
         setLoading(false);
       },
     });
