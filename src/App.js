@@ -1,13 +1,12 @@
-import React, { useState, lazy } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { calculator, home, error, todolist } from "./routes";
 import "./styles/index.scss";
 import Preloader from "./components/Preloader/Preloader";
-
-const Calculator = lazy(() => import("./pages/Calculator"));
-const Todolist = lazy(() => import("./pages/Todolist"));
-const Error = lazy(() => import("./pages/Error"));
-const Home = lazy(() => import("./pages/Home"));
+import Home from "./pages/Home";
+import Calculator from "./pages/Calculator";
+import Todolist from "./pages/Todolist";
+import Error from "./pages/Error";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
