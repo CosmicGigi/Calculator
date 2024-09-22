@@ -159,9 +159,7 @@ const Calculator = () => {
         <div className="output">
           {}
           {lastResult && (
-            <div className="last-result">
-              Résultat précédent : {formatOperand(lastResult)}
-            </div>
+            <div className="last-result">{formatOperand(lastResult)}</div>
           )}
 
           {}
