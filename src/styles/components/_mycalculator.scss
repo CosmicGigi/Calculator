@@ -2,12 +2,12 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  align-content: center;
   border: 1px solid black;
   background: linear-gradient(to right, #1d1d1d, #3d3e3d);
-  margin: 50px 0 0 0;
   border-radius: 25px 25px 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  width: 500px;
+  width: 100wh;
 
   h1 {
     font-size: 2rem;
