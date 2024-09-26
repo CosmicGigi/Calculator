@@ -7,7 +7,9 @@
   background: linear-gradient(to right, #1d1d1d, #3d3e3d);
   border-radius: 25px 25px 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  width: 100wh;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 
   h1 {
     font-size: 2rem;
@@ -20,7 +22,7 @@
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-sm) {
     h1 {
       font-size: 1.5rem;
       padding: 0.5rem;
@@ -40,20 +42,19 @@
   display: grid;
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
-  grid-gap: 20px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  gap: 20px;
+  padding: 2rem 0;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(4, 5rem);
     grid-template-rows: minmax(6rem, auto) repeat(5, 5rem);
-    grid-gap: 15px;
+    gap: 15px;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     grid-template-columns: repeat(4, 4rem);
     grid-template-rows: minmax(5rem, auto) repeat(5, 4rem);
-    grid-gap: 10px;
+    gap: 10px;
   }
 }
 
@@ -65,17 +66,18 @@
   background: linear-gradient(to right, #7e7e7e, #a4a4a4);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
 
   &:hover {
     background: linear-gradient(to right, #5e5e5e, #8e8e8e);
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     font-size: 0.9rem;
     border-radius: 20px;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     font-size: 0.8rem;
     border-radius: 15px;
   }
@@ -90,17 +92,18 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease;
 
   &:hover {
     background: linear-gradient(to right, #5e5e5e, #8e8e8e);
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     font-size: 0.9rem;
     border-radius: 20px;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     font-size: 0.8rem;
     border-radius: 15px;
   }
@@ -118,11 +121,11 @@
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     padding: 0.5rem;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     padding: 0.3rem;
   }
 }
@@ -135,11 +138,11 @@
 .current-calculation {
   font-size: 1.5rem;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     font-size: 1.2rem;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     font-size: 1rem;
   }
 }
@@ -147,11 +150,11 @@
 .last-result {
   font-size: 1rem;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: 768px) {
     font-size: 0.8rem;
   }
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: 576px) {
     font-size: 0.7rem;
   }
 }
